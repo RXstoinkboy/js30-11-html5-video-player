@@ -26,6 +26,9 @@ body {
 .player .video {
   max-width: 800px;
 }
+.player .video:fullscreen {
+  max-width: 100%;
+}
 .player .controls {
   position: absolute;
   width: 100%;
@@ -51,7 +54,7 @@ body {
   transition: all 0.5s ease;
 }
 .player .controls .play-button {
-  width: 9%;
+  width: 7%;
   height: 38px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -63,7 +66,15 @@ body {
   height: 38px;
 }
 .player .controls .skip {
-  width: 9%;
+  width: 7%;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.player .controls .fullScreen {
+  width: 5%;
   height: 38px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
